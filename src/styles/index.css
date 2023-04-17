@@ -1,0 +1,48 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+  font-family: "Roboto", sans-serif;
+}
+
+:root {
+  box-sizing: border-box;
+  --primary-clr: #3c6e71;
+  --secondary-clr: #284b63;
+  --background-clr: #353535;
+  --error-clr: #bc4749;
+  --accent-clr: #99582a;
+  --font-clr: #d9d9d9;
+  --font-family: "Roboto", sans-serif;
+  font-size: 62.5%;
+}
+
+body {
+  background: var(--background-clr);
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+button {
+  text-transform: uppercase;
+  border-radius: 50px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
+    rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+  cursor: pointer;
+  font-size: 1.5rem;
+  border: none;
+  transition: all 0.3s ease-in-out;
+}
+
+button:hover {
+  background: var(--secondary-clr);
+}
+
+.active {
+  border: 1px solid white;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 50px;
+  padding: 0.2rem;
+}
